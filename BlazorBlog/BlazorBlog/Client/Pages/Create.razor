@@ -4,7 +4,7 @@
 
 <h3>Create a New Blog Post</h3>
 
-<EditForm Model="@newBlogPost" OnInvalidSubmit="CreateNewBlogPost">
+<EditForm Model="@newBlogPost" OnValidSubmit="CreateNewBlogPost">
     <DataAnnotationsValidator/>
     <div class="form-group">
         <label for="title">Title</label>
