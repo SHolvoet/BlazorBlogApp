@@ -1,8 +1,6 @@
 ﻿using BlazorBlog.Server.Data;
 using BlazorBlog.Shared;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -23,7 +21,7 @@ namespace BlazorBlog.Server.Controllers
         [HttpGet]
         public ActionResult<List<BlogPost>> GimmeAllTheBlogPosts()
         {
-            return Ok(_context.BlogPosts);
+            return Ok(_context.BlogPosts.OrderByDescending(post => post.DateCreated));
         }
 
         [HttpGet("{url}")]

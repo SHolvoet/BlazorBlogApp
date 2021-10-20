@@ -48,3 +48,19 @@ a, .btn-link {
         right: 0.75rem;
         top: 0.5rem;
     }
+
+.card-img{
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.post-img {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
